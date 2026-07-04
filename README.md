@@ -93,8 +93,9 @@ Install Ptyktos/arxiv-search as a local MCP server and register it in this
 session's agent config so I can search arXiv from future turns.
 
 Steps:
-1. Clone (or use the existing checkout at ~/projects/ai-projects/arxiv-search-rs-mcp):
-   `gh repo clone Ptyktos/arxiv-search /tmp/arxiv-search`  (or point at the local path)
+1. Clone into a persistent location (skip if you already have a checkout):
+   `gh repo clone Ptyktos/arxiv-search ~/projects/arxiv-search`
+   Below, replace `<repo>` with that path.
 2. Build the native binary:
    `cargo build --release --manifest-path <repo>/Cargo.toml --bin arxiv-search-mcp`
 3. Install it onto PATH:
